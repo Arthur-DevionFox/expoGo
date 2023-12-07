@@ -12,9 +12,16 @@ export function Header() {
 
 const styles = StyleSheet.create({
     main: {
+        width: "100%",
+        height: "10%",
+        marginTop: 5,
         display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#2BE080",
     },
     text: {
-
+        fontSize: 30,
+        color: "white",
     }
 })
