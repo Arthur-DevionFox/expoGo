@@ -3,7 +3,7 @@ import { StyleSheet, TouchableOpacity, Text} from "react-native";
 
 export function List( {element, deleteHandler} ) {
     return (
-        <TouchableOpacity onPress={() => deleteHandler(element.key)}>
+        <TouchableOpacity style={styles.touchableOpacity} onPress={() => deleteHandler(element.key)}>
             <Text style={styles.text}>{element.text}</Text>
         </TouchableOpacity>
     )
@@ -17,10 +17,18 @@ const styles = StyleSheet.create({
         borderColor: "#2BE080",
         borderWidth: 2,
         marginTop: 20,
-        width: "60%",
-        marginLeft: "20%",
+        width: "100%",
         display: "flex",
         alignItems: "center",
-        color: "#2BE080"
+        justifyContent: "center",
+        color: "#2BE080",
+        overflow: "hidden",
+        margin: "auto"
+    },
+    touchableOpacity: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        margin: "auto",
     }
 })
