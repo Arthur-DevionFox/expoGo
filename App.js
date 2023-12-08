@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     header: {
         display: "flex",
         alignItems: "center",
-        marginTop: 120,
+        marginTop: 60,
     },
     list: {
         marginTop: 20,
